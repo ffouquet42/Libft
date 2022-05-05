@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/05 10:49:37 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/05 11:35:14 by fllanet          ###   ########.fr       */
+/*   Created: 2022/05/05 11:21:02 by fllanet           #+#    #+#             */
+/*   Updated: 2022/05/05 11:24:34 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
+int	ft_isalnum(int c)
+{
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
+}
 
-#endif
+/*
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+	printf("%d\n", ft_isalnum(126));
+	printf("%d\n", isalnum(126));
+}
+*/
