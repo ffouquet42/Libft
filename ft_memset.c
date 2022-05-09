@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 12:09:04 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/05 13:25:41 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/09 20:26:43 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memset(void *s, int c, size_t n)
 		str[i] = c;
 		i++;
 	}
-	return (s);
+	return (s); // return s ou *s ?
 }
