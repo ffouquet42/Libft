@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fllanet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 22:35:48 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/09 21:00:59 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/09 21:59:43 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t			i;
 	unsigned char	*dst_tmp;
 	unsigned char	*src_tmp;
-	unsigned char	tmp[n];
+	unsigned char	*tmp;
 
 	i = 0;
 	if (!dest && !src)
@@ -35,5 +35,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		dst_tmp[i] = tmp[i];
 		i++;
 	}
-	return (dest);
+	// dst_tmp[i] = '\0';
+	return (dst_tmp);
 }
