@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 22:35:48 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/09 22:15:46 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/10 11:52:45 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,18 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t			i;
-	unsigned char	*dst_tmp;
-	unsigned char	*src_tmp;
-	unsigned char	*tmp;
+	const char	*src_tmp;
+	char		*dst_tmp;
 
-	i = 0;
-	if (!dest && !src)
-		return (NULL);
-	dst_tmp = (unsigned char *)dest;
-	src_tmp = (unsigned char *)src;
-	while (i < n)
-	{
-		tmp[i] = src_tmp[i];
-		i++;
-	}
-	i = 0;
-	while (i < n)
-	{
-		dst_tmp[i] = tmp[i];
-		i++;
-	}
-	return (dst_tmp);
+	src_tmp = src;
+	dst_tmp = dest;
+	if (!n)
+		return (dest);
+	if (dest <= src)
+		return (ft_memcpy(dest, src, n));
+	src_tmp += n;
+	dst_tmp += n;
+	while (n--)
+		*--dst_tmp = *--src_tmp;
+	return (dest);
 }
-
-// dst_tmp[i] = '\0';
