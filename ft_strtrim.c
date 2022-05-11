@@ -6,13 +6,13 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 05:19:56 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 05:29:09 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/11 14:13:13 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_charset(char c, char const *set)
+int	ft_isset(char const *set, char c)
 {
 	int	i;
 
@@ -26,51 +26,45 @@ int	is_charset(char c, char const *set)
 	return (0);
 }
 
-char	*ft_trim(char *dest, char const *s1, char const *set)
+size_t	ft_countset(char const *str, char const *set)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	count;
 
 	i = 0;
-	j = 0;
-	while (s1[i])
+	count = 0;
+	while (str[i])
 	{
-		if (is_charset(s1[i], set) == 0)
-		{
-			dest[j] = s1[i];
-			j++;
-		}
+		if (ft_isset(set, str[i]) == 0)
+			count++;
 		i++;
 	}
-	return (dest);
+	return (count);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
-	int		size;
-	char	*dest;
+	size_t	i;
+	size_t	j;
+	size_t	len;
+	char	*trim;
 
-	i = 0;
-	size = 0;
-	while (s1[i])
-	{
-		if (is_charset(s1[i], set) == 0)
-			size++;
-		i++;
-	}
-	dest = malloc(sizeof(char) * (size + 1));
-	if (!dest)
+	len = ft_countset(s1, set);
+	trim = (char *)malloc(sizeof(char) * (len + 1));
+	if (!trim)
 		return (NULL);
-	i = 0;
-	dest = ft_trim(dest, s1, set);
-	return (dest);
+	i = -1;
+	j = 0;
+	while (s1[++i])
+		if (ft_isset(set, s1[i]) == 0)
+			trim[j++] = s1[i];
+	trim[j] = '\0';
+	return (trim);
 }
-
 /*
 #include <stdio.h>
 int main()
 {
-	printf("%s\n", ft_strtrim("coucou soundous", "os"));
+	printf("%s\n", ft_strtrim("ooocoucouooo", "o")); // coucou 
 }
 */
