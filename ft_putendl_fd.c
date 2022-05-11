@@ -6,13 +6,13 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 07:15:11 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 07:16:28 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/11 10:10:34 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putend_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	if (fd < 0)
 		return ;

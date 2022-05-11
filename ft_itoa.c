@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 06:35:40 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 06:45:39 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/11 10:38:02 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	ft_nbrlen(long nb)
 		nb *= -1;
 		i++;
 	}
+	if (nb == 0)
+		return (1);
 	while (nb > 0)
 	{
 		nb /= 10;
@@ -34,27 +36,25 @@ char	*ft_itoa(int n)
 {
 	int		i;
 	char	*dest;
+	long	nb;
 
-	i = ft_nbrlen(n);
+	nb = n;
+	i = ft_nbrlen(nb);
 	dest = malloc(sizeof(char) * (i + 1));
 	if (!dest)
 		return (NULL);
-	dest[i] = '\0';
-	i--;
-	if (n < 0)
+	dest[i--] = '\0';
+	if (nb < 0)
 	{
 		dest[0] = '-';
-		n *= -1;
+		nb *= -1;
 	}
-	if (n == 0)
-	{
+	if (nb == 0)
 		dest[0] = '0';
-		return (dest);
-	}
-	while (n > 0)
+	while (nb > 0)
 	{
-		dest[i--] = '0' + (n % 10);
-		n /= 10;
+		dest[i--] = '0' + (nb % 10);
+		nb /= 10;
 	}
 	return (dest);
 }
