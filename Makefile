@@ -6,7 +6,7 @@
 #    By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/10 08:07:14 by fllanet           #+#    #+#              #
-#    Updated: 2022/05/12 11:00:03 by fllanet          ###   ########.fr        #
+#    Updated: 2022/05/12 15:49:52 by fllanet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,10 @@ SRCS		=	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
 
 OBJS		= $(SRCS:.c=.o)
 
+BONUS		=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+
+BONUS_OBJS	= $(BONUS:.c=.o)
+
 CC			= gcc
 RM			= rm -f
 CFLAGS		= -Wall -Wextra -Werror
@@ -34,11 +38,14 @@ $(NAME):	$(OBJS)
 				ar rcs $(NAME) $(OBJS)
 
 clean:
-				$(RM) $(OBJS)
+				$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean:		clean
 				$(RM) $(NAME)
 
 re:			fclean $(NAME)
+
+bonus:		$(BONUS_OBJS)
+				ar rcs $(NAME) $(BONUS_OBJS)
 
 .PHONY:		all clean fclean re
