@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 05:19:56 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/12 09:34:50 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/12 09:49:47 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	is_charset(char c, char const *set)
 	return (0);
 }
 
-int	ft_len(char const *s1, char const *set)
+static int	ft_len(char const *s1, char const *set)
 {
 	int	i;
 	int	len;
