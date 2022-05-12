@@ -6,76 +6,39 @@
 #    By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/10 08:07:14 by fllanet           #+#    #+#              #
-#    Updated: 2022/05/10 08:08:02 by fllanet          ###   ########.fr        #
+#    Updated: 2022/05/12 11:00:03 by fllanet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC_DIR		=	./
+SRCS		=	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
+					ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
+					ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
+					ft_memmove.c ft_memset.c ft_putchar_fd.c ft_putendl_fd.c \
+					ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_strchr.c \
+					ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
+					ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c \
+					ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c \
+					ft_tolower.c ft_toupper.c \
 
-HEAD_DIR	=	./
+OBJS		= $(SRCS:.c=.o)
 
-SRCS		=	${SRC_DIR}ft_atoi.c\
-				${SRC_DIR}ft_bzero.c\
-				${SRC_DIR}ft_isalnum.c\
-				${SRC_DIR}ft_isalpha.c\
-				${SRC_DIR}ft_isascii.c\
-				${SRC_DIR}ft_isdigit.c\
-				${SRC_DIR}ft_isprint.c\
-				${SRC_DIR}ft_memchr.c\
-				${SRC_DIR}ft_memcmp.c\
-				${SRC_DIR}ft_memmove.c\
-				${SRC_DIR}ft_memcpy.c\
-				${SRC_DIR}ft_memset.c\
-				${SRC_DIR}ft_calloc.c\
-				${SRC_DIR}ft_strchr.c\
-				${SRC_DIR}ft_strlcat.c\
-				${SRC_DIR}ft_strlcpy.c\
-				${SRC_DIR}ft_strlen.c\
-				${SRC_DIR}ft_strdup.c\
-				${SRC_DIR}ft_strncmp.c\
-				${SRC_DIR}ft_strnstr.c\
-				${SRC_DIR}ft_strrchr.c\
-				${SRC_DIR}ft_tolower.c\
-				${SRC_DIR}ft_toupper.c\
-				${SRC_DIR}ft_substr.c\
-				${SRC_DIR}ft_strjoin.c\
-				${SRC_DIR}ft_strtrim.c\
-				${SRC_DIR}ft_split.c\
-				${SRC_DIR}ft_itoa.c\
-				${SRC_DIR}ft_strmapi.c\
-				${SRC_DIR}ft_striteri.c\
-				${SRC_DIR}ft_putchar_fd.c\
-				${SRC_DIR}ft_putstr_fd.c\
-				${SRC_DIR}ft_putendl_fd.c\
-				${SRC_DIR}ft_putnbr_fd.c
+CC			= gcc
+RM			= rm -f
+CFLAGS		= -Wall -Wextra -Werror
 
+NAME		= libft.a
 
-HEAD		=	${HEAD_DIR}lib_ft.h
+all:		$(NAME)
 
-OBJS		=	${SRCS:.c=.o}
-
-NAME		=	libft.a
-
-CC			=	gcc
-
-RM			=	rm -f
-
-CFLAGS		=	-Wall -Wextra -Werror
-
-.c.o:
-			${CC} ${CFLAGS} -I${HEAD_DIR} -c $< -o ${<:.c=.o}
-
-$(NAME):	${OBJS}
-			ar -rc libft.a ${OBJS}
-
-all:		${NAME}
+$(NAME):	$(OBJS)
+				ar rcs $(NAME) $(OBJS)
 
 clean:
-			${RM} ${OBJS}
+				$(RM) $(OBJS)
 
 fclean:		clean
-			${RM} ${NAME}
+				$(RM) $(NAME)
 
-re:			fclean all
+re:			fclean $(NAME)
 
 .PHONY:		all clean fclean re
