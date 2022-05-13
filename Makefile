@@ -6,7 +6,7 @@
 #    By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/10 08:07:14 by fllanet           #+#    #+#              #
-#    Updated: 2022/05/13 11:00:01 by fllanet          ###   ########.fr        #
+#    Updated: 2022/05/13 12:36:29 by fllanet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,6 @@ fclean:		clean
 
 re:			fclean $(NAME)
 
-bonus:		$(BONUS_OBJS)
-				ar rcs $(NAME) $(BONUS_OBJS)
+bonus:		${NAME} $(BONUS_OBJS)
 
 .PHONY:		all clean fclean re
