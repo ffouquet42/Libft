@@ -6,7 +6,7 @@
 #    By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/10 08:07:14 by fllanet           #+#    #+#              #
-#    Updated: 2022/05/13 12:36:29 by fllanet          ###   ########.fr        #
+#    Updated: 2022/05/13 13:31:23 by fllanet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,33 +20,34 @@ SRCS		=	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
 				ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c \
 				ft_tolower.c ft_toupper.c \
 
-OBJS		= $(SRCS:.c=.o)
+OBJS		=	$(SRCS:.c=.o)
 
 BONUS		=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 				ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
 				ft_lstmap.c \
 
-BONUS_OBJS	= $(BONUS:.c=.o)
+BONUS_OBJS	=	$(BONUS:.c=.o)
 
-CC			= gcc
-RM			= rm -f
-CFLAGS		= -Wall -Wextra -Werror
+CC			=	gcc
+RM			=	rm -f
+CFLAGS		=	-Wall -Wextra -Werror
 
-NAME		= libft.a
+NAME		=	libft.a
 
-all:		$(NAME)
+all:			$(NAME)
 
-$(NAME):	$(OBJS)
+$(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS)
 
 clean:
 				$(RM) $(OBJS) $(BONUS_OBJS)
 
-fclean:		clean
+fclean:			clean
 				$(RM) $(NAME)
 
-re:			fclean $(NAME)
+re:				fclean $(NAME)
 
-bonus:		${NAME} $(BONUS_OBJS)
+bonus:			$(BONUS_OBJS)
+				ar rcs $(NAME) $(BONUS_OBJS)
 
-.PHONY:		all clean fclean re
+.PHONY:			all clean fclean re bonus
