@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 01:11:28 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/11 07:36:45 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:57 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	printf("%s\n", ft_strrchr("oundou", 's'));
-	printf("%s\n", strrchr("oundou", 's'));
-}
-*/

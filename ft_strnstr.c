@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 01:57:30 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 02:37:19 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:52 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	printf("%s\n", ft_strnstr("aaabcabcd", "a", 1));
-	printf("%s\n", strnstr("aaabcabcd", "a", 1));
-}
-*/

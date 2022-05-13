@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 05:12:50 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 05:18:20 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:29 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dest[j] = '\0';
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	printf("%s\n", ft_strjoin("coucou", "soundous"));
-}
-*/

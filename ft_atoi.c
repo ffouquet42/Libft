@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 02:38:13 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 02:46:01 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:03:04 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * pos);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	printf("%d\n", ft_atoi(" \t\n\v\r\f+1048abc"));
-	printf("%d\n", atoi(" \t\n\v\r\f+1048abc"));
-}
-*/

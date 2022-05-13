@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 06:35:40 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/13 12:26:53 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:03:50 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,3 @@ char	*ft_itoa(int n)
 	}
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	printf("%s\n", ft_itoa(0));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 01:27:17 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/12 12:01:56 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:46 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char *s1 = "coucou";
-	char *s2 = "coucoi";
-	printf("%d\n", ft_strncmp(s1, s2, 5));
-	printf("%d\n", strncmp(s1, s2, 5));
-}
-*/

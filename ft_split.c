@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 06:20:29 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/13 12:28:05 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:15 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,22 +85,3 @@ char	**ft_split(char const *s, char c)
 	dest[x] = NULL;
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char const *s = "ooo coucou soundousooooooo";
-	char c = 'o';
-
-	char **dest = ft_split(s, c);
-
-	int i = 0;
-	while (dest[i])
-	{
-		printf("%s\n", dest[i]);
-		i++;
-	}
-	//printf("%s\n", dest[i]);
-}
-*/

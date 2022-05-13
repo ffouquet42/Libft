@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 01:03:37 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/11 07:36:33 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:20 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s + i);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char s[] = "tripouille";
-	printf("%s\n", strchr(s, 't' + 2));
-	printf("%s\n", ft_strchr(s, 't' + 2));
-}
-*/

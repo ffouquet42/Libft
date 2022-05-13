@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 22:39:18 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/09 22:41:57 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:05:11 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	printf("%d\n", ft_tolower(68));
-	printf("%d\n", tolower(68));
-}
-*/

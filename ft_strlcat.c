@@ -6,7 +6,7 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 22:19:19 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/09 22:32:02 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 15:04:34 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_size + i] = '\0';
 	return (dst_size + src_size);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-	char *dest = "dest";
-	const char *src = "source";
-	size_t size = 1;
-
-	printf("%zu\n", ft_strlcat(dest, src, size));
-}
-*/
