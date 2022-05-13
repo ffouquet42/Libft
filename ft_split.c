@@ -6,20 +6,20 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 06:20:29 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/10 06:34:33 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 12:28:05 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_charset(char s, char c)
+static int	is_charset(char s, char c)
 {
 	if (s == c)
 		return (1);
 	return (0);
 }
 
-int	words_count(char const *s, char c)
+static int	words_count(char const *s, char c)
 {
 	int	count;
 
@@ -38,7 +38,7 @@ int	words_count(char const *s, char c)
 	return (count);
 }
 
-char	*malloc_word(char const *s, char c)
+static char	*malloc_word(char const *s, char c)
 {
 	char	*word;
 	int		i;

@@ -6,13 +6,13 @@
 /*   By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 06:35:40 by fllanet           #+#    #+#             */
-/*   Updated: 2022/05/11 10:38:02 by fllanet          ###   ########.fr       */
+/*   Updated: 2022/05/13 12:26:53 by fllanet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_nbrlen(long nb)
+static int	ft_nbrlen(long nb)
 {
 	int	i;
 
