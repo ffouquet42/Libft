@@ -6,7 +6,7 @@
 #    By: fllanet <fllanet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/10 08:07:14 by fllanet           #+#    #+#              #
-#    Updated: 2022/05/13 08:42:33 by fllanet          ###   ########.fr        #
+#    Updated: 2022/05/13 10:00:09 by fllanet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS		=	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
 OBJS		= $(SRCS:.c=.o)
 
 BONUS		=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-				ft_lstadd_back.c \
+				ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
 
 BONUS_OBJS	= $(BONUS:.c=.o)
 
