@@ -75,7 +75,7 @@ For compile this project use the Makefile with one of the following rules.
 `make fclean` : Delete the `*.o` and `libft.a`  
 `make re` : Run `make fclean` then `make`  
 
-## Testings
+## Testing
 
 This project has also been tested with two testers from github. All the tests carried out return OK / MOK.
 
