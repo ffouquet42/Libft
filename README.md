@@ -1,4 +1,4 @@
-# Libft
+# libft
 
 ## Grade - 125/100
 
