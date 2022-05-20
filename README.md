@@ -11,7 +11,7 @@ This first project as a student of 42 consists of recoding a certain number of f
 
 ## What's in this project
 
-This project contains several functions from the C library and other functions. Here is the complete list below.
+This project contains several functions from the C library and other functions. It was realized with all the bonus. Here is the complete list below.
 
 ### Mandatory Part 1 - Libc Functions
 
