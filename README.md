@@ -77,8 +77,6 @@ This file is only used to test all functions. It is not requested and it should 
 
 ## How to use it
 
-First of all you need to clone this repository.
-
 For compile this project use the Makefile with one of the following rules.
 
 `make` : Compile all the mandatory part in a `libft.a`  
