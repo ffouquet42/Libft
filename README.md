@@ -77,10 +77,7 @@ This file is only used to test all functions. It is not requested and it should 
 
 ## How to use it
 
-First of all you need to clone this repository with one of the following commands.
-
-https : `git clone https://github.com/ffouquet42/libft.git`  
-ssh   : `git clone git@github.com:ffouquet42/libft.git`
+First of all you need to clone this repository.
 
 For compile this project use the Makefile with one of the following rules.
 
