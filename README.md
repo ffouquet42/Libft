@@ -1,20 +1,21 @@
 # Libft
 
+*Version: 15*
+
 ## Grade - 125/100
 
-	/!\ screen /!\
+`screen`  
 Mandatory Part : 100/100  
 Bonus Part : 25/25
 
 ## Description
 
-*Version: 15*
-
 This first project as a student of 42 consists of recoding a certain number of functions from the standard C library, as well as other utility functions that we will be able to reuse throughout our course. You will find the English and French subjects in the "subjects" folder.
 
 ## What's in this project
 
-This project contains several functions from the C library and other functions. It was realized with all the bonus. All the files are normed following the standard of 42. Here is the complete list below.
+This project contains several functions from the C library and other functions. It was realized with all the bonus.  
+All the files are normed following the standard of 42. Here is the complete list below.
 
 ### Mandatory Part 1 - Libc Functions
 
@@ -78,13 +79,15 @@ This file is only used to test all functions. It is not requested and it should 
 
 First of all you need to clone this repository with one of the following commands.
 
-HTTPS : ```bash
+HTTPS :
+```bash
 git clone https://github.com/ffouquet42/libft.git
 ```
 
 or
 
-SSH : ```bash
+SSH :
+```bash
 git clone git@github.com:ffouquet42/libft.git
 ```
 
@@ -100,16 +103,16 @@ For testing it, run `gcc *.c && ./a.out`
 
 ## Testing
 
-This project respects the norm of 42 and has been tested with the norminette.
-	/!\ screen /!\
+This project respects the norm of 42 and has been tested with the norminette.  
+`screen`  
 
 This project has also been tested with two testers from github. All the tests carried out return OK / MOK.
 
-* [libftTester](https://github.com/Tripouille/libftTester) from Tripouille
-	/!\ screen /!\
-* [Libftest](https://github.com/jtoty/Libftest) (libft-war-machine) from jtoty
-	/!\ screen /!\
+* [libftTester](https://github.com/Tripouille/libftTester) from Tripouille  
+`screen`  
+* [Libftest](https://github.com/jtoty/Libftest) (libft-war-machine) from jtoty  
+`screen`  
 
 ## Credit
 
-Project made by [ffouquet42](https://github.com/ffouquet42).
+Project made by [ffouquet42](https://github.com/ffouquet42)
