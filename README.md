@@ -79,7 +79,7 @@ This file is only used to test all functions. It is not requested and it should 
 
 First of all you need to clone this repository with one of the following commands.
 
-`git clone https://github.com/ffouquet42/libft.git`
+`git clone https://github.com/ffouquet42/libft.git`  
 `git clone git@github.com:ffouquet42/libft.git`
 
 For compile this project use the Makefile with one of the following rules.
