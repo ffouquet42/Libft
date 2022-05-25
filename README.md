@@ -92,6 +92,9 @@ For testing it, run `gcc *.c && ./a.out`
 This project respects the norm of 42 and has been tested with the norminette.  
 `screen`  
 
+It was been tested with a custom main. You can find it above.  
+`screen`
+
 This project has also been tested with two testers from github. All the tests carried out return OK / MOK.
 
 * [libftTester](https://github.com/Tripouille/libftTester) from Tripouille  
