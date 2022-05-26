@@ -4,13 +4,12 @@
 
 ## Grade - 125/100
 
-`screen`  
 Mandatory Part : 100/100  
 Bonus Part : 25/25
 
 ## Description
 
-This first project as a student of 42 consists of recoding a certain number of functions from the standard C library, as well as other utility functions that we will be able to reuse throughout our course. You will find the English and French subjects in the "subjects" folder.
+This first project as a student of 42 consists of recoding a certain number of functions from the standard C library, as well as other utility functions that we will be able to reuse throughout our course.
 
 ## What's in this project
 
@@ -69,12 +68,6 @@ All the files are normed following the standard of 42. Here is the complete list
 * ft_lstiter
 * ft_lstmap
 
-### Additional files
-
-* main.c
-
-This file is only used to test all functions. It is not requested and it should not be returned with the project.
-
 ## How to use it
 
 For compile this project use the Makefile with one of the following rules.
@@ -85,22 +78,14 @@ For compile this project use the Makefile with one of the following rules.
 `make fclean` : Delete the `*.o` and `libft.a`  
 `make re` : Run `make fclean` then `make`  
 
-For testing it, run `gcc *.c && ./a.out`
-
 ## Testing
 
 This project respects the norm of 42 and has been tested with the norminette.  
-`screen`  
-
-It was been tested with a custom main. You can find it above.  
-`screen`
 
 This project has also been tested with two testers from github. All the tests carried out return OK / MOK.
 
 * [libftTester](https://github.com/Tripouille/libftTester) from Tripouille  
-`screen`  
 * [Libftest](https://github.com/jtoty/Libftest) (libft-war-machine) from jtoty  
-`screen`  
 
 ## Credit
 
